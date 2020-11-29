@@ -1,0 +1,1 @@
+<span id="cluq-menu-button" class=""><img alt="login icon" id="clug-icon" src="<?php echo  get_stylesheet_directory_uri().'/img/login.png'?>"/></span>

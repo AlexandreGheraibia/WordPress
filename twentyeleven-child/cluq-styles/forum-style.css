@@ -1,0 +1,228 @@
+ 
+/*mise en forme des pages forum mot de passe oublié et  inscription*/
+.bbp-login-form .bbp-form .bbp-username,
+.bbp-login-form .bbp-form .bbp-email{
+	margin:auto;
+	text-align:center;	
+}
+
+/*conteneur du forum dans le template*/
+.bbpress-template-page .entry-content1 {
+	float: left;
+	height:100%;
+	/*margin: auto;*/
+	text-align: center;
+	word-wrap: break-word;
+}
+
+/*conteneur du forum de l'extension*/
+.bbpress-template-page #bbpress-forums{
+	margin-top:0px;
+	height:100%;
+	padding: 14px;
+}
+
+/*dimensionne la colonne de droite*/
+.bbpress-template-page .widget-area {
+	display:none;
+	float: right;
+	margin:auto;
+	width: 25%;
+	padding:5px;
+	/*border: thick double #C0C0C0;*/
+}
+
+/*contenu du template forum partie de gauche*/
+/*dimensionne le contenu du forum et le centre*/
+.bbpress-template-page #content{
+	margin: auto;
+	padding:auto;
+	width: 95%;
+}
+
+/*conteneur forum*/
+#bbpress-forums {    
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 10px;
+	/*background-color: rgb(255, 255, 0) !important;
+	border:1px dotted rgb(0, 0, 0)*/
+}
+
+/*hide search bar up on the forum*/
+.bbpress-template-page .entry-content1 .bbp-search-form {
+ display:none !important;
+ }
+  
+/* forum right menu 
+***********************************************/
+/*search bar in the side bar, hide the button*/
+#bbp_search_submit{
+	 display:none !important;
+}
+
+/*titre donné par le widget*/
+.bbpress-template-page #bbp_login_widget-5 .widget-title {
+	color:black;
+	font-weight: bold;
+}
+
+/*conteneur des différents widgets de la zone d'affichage des widgets*/
+.bbpress-template-page .widget-area aside{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+
+/*login part*/
+.bbpress-template-page .widget-area aside .bbp-logged-in{
+	text-align:right;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*champs d'identification*/
+.bbpress-template-page .widget-area input[type="text"],
+.bbpress-template-page .widget-area input[type="password"]{
+	resize: horizontal;
+	width:90%;
+}
+/*conteneur login*/
+.bbp-login-form .bbp-form .bbp-username p .hide,
+.bbp-login-form .bbp-form .bbp-username p #user_login{
+	width:auto;
+	margin:auto;
+}
+
+/*champs du form login*/
+.bbp-login-form .bbp-form .bbp-username input,
+.bbp-login-form .bbp-form .bbp-email input{
+	margin:auto;
+	display:inline;
+	
+}
+
+/*enveloppe du bouton connexion*/
+.page .bbp-login-form .bbp-form .bbp-submit-wrapper{
+	width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*bouton connexion*/
+.bbp-login-form .bbp-form .bbp-submit-wrapper button{
+	display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.bbpress-template-page .widget-area .bbp-login-form .bbp-form .bbp-username{
+	text-align:left;
+}
+
+.bbpress-template-page .widget-area .bbp-submit-wrapper{
+	margin-bottom:15px;
+}
+/*link lost password and register*/
+.bbpress-template-page .widget-area .bbp-login-links{
+	margin:auto;
+	display: flex;
+	width:100%;
+	flex-direction: row;
+    justify-content: flex-end;
+}
+
+/*connection button*/
+.bbpress-template-page .widget-area .bbp-submit-wrapper{
+	text-align:right;
+	width:100%;
+}
+.bbpress-template-page .widget-area .bbp-submit-wrapper button{
+	display:inline;
+}
+
+/*link*/
+.bbpress-template-page .widget-area .bbp-login-links .bbp-register-link{
+	margin-right:15px;
+}
+
+/*when user is connected*/
+.bbpress-template-page .widget-area #bbp_views_widget-2{
+    margin-right: auto;
+    width:100%;
+}
+/*widget link subject*/
+.bbpress-template-page .widget-area #bbp_views_widget-2 ul,
+.bbpress-template-page .widget-area #bbp_views_widget-2 ul li{
+    margin-right: auto;
+	margin-left: auto;
+    width:90%;
+	/*outline: 1px dotted red;*/
+	text-align:center;
+	list-style:none;
+}
+
+
+/*widget search,and title*/
+.bbpress-template-page .widget-area #bbp_stats_widget-2,
+.bbpress-template-page .widget-area #bbp_search_widget-2{
+	text-align:center;
+	/*background-color: blue;*/
+}
+/*statistics widget*/
+.bbpress-template-page .widget-area dl {
+    margin: 5px;
+	position:relative;
+	overflow: hidden; 
+	padding:4px;
+    /*outline: 1px dotted red;*/
+	
+}
+
+.bbpress-template-page .widget-area dl dt {
+    margin-bottom: 5px;
+    padding: 2px;
+    float: left;
+    clear: both;
+	/*box-shadow: -1px 1px 1px 2px black;*/
+	box-shadow: -1px 1px 1px 0px #F1F1E1;
+	
+	
+}
+.bbpress-template-page .widget-area dl dd {
+    margin: 0 0 5px 0;
+    padding: 2px;
+    float: right;
+	box-shadow: 1px 1px 1px 0px #F1F1E1;
+	
+
+}
+
+/*pied de page du forum*/
+.bbpress-template-page,#page,#site-generator {
+	/*background-color:  #b983e5 !important;*/
+	;
+}
+
+/*customisation*/
+/*change the forum list*/
+#bbpress-forums .bbp-forums-list li {
+display: inline;
+
+}
+/*change the closed to replies to “greyed out for another color*/
+#bbpress-forums .status-closed,
+#bbpress-forums .status-closed a {
+  color: #aaa !important;
+}
+/*add a description to the forum*/
+#bbpress-forums div.bbp-forum-content {
+  clear: both !important;
+  margin-left: 0 !important;
+  padding: 0  !important;
+}

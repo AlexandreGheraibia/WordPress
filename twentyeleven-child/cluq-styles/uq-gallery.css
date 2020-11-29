@@ -1,0 +1,136 @@
+.page-template-page-Union-Info .stretch-gallery{
+	margin: 0px 40px 0px 40px!important;
+}
+
+.page-template-page-Union-Info .center{
+	margin: 0;
+	text-align:center;
+}
+
+.page-template-page-Union-Info #primary {
+	/*border:0px solid green;*/
+	
+}
+
+.page-template-page-Union-Info #content {
+	box-sizing: content-box;
+	/*border:10px solid red;*/
+}
+
+.page-template-page-Union-Info .type-post {
+	box-sizing: border-box;
+	/*	border:10px solid red;*/
+}
+
+.page-template-page-Union-Info .uq-gallerie{
+	padding:0px;
+	margin: 0px;
+	/*border:10px solid red!important;
+	background-color:blue!important;*/
+	/*border:10px solid white;*/
+}
+
+.slider {	
+	position:absolute;
+	margin-left: 5%!important;
+	margin-right: 5%!important;
+	width:90%!important;
+	height:100%!important;
+	/*border:1px solid red;*/
+}
+
+.wrapper {
+	visibility: hidden;
+	position: fixed;
+	z-index: 1000000!important;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	padding:auto;
+	margin: 0;
+	vertical-align: middle;
+	height:100%;
+	width: 100%;
+	background-color:rgba(0,0,0,0.5);
+	/*border:1px solid blue;*/
+}
+
+.sb-slider{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap:wrap;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%) ;
+	top: 50%!important;
+	left: 50%!important;
+	width:800px;
+	
+	border:1px solid green;
+}
+.sb-slider li{
+	/*border:1px solid blue;*/
+}
+.sb-slider img{
+	height:400px!important;
+	width:800px!important;
+}
+
+.row-right {
+	 display: flex;
+	 padding-top:10px;
+	 padding-bottom:10px;
+	 padding-left:20px;
+	 justify-content: left;
+}
+
+.column {
+	float: left;
+	width: 25%;
+}
+
+/* Style the images inside the grid */
+.column img {
+	opacity: 0.8; 
+	cursor: pointer; 
+	border-radius:5% 0% 5% 0%;
+	padding: 5px;
+/*border:1px solid black;*/
+}
+
+.column img:hover{
+	opacity: 1;
+	border: 1px solid blue;
+	padding: 0px;
+	margin:0px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+/* Expanding image text */
+#imgtext {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	color: white;
+	font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	color: white;
+	font-size: 35px;
+	cursor: pointer;
+}

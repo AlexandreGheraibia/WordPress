@@ -1,0 +1,76 @@
+#categories-3 ul{
+	margin:0px;
+	padding:0px;
+}
+#categories-3 li{
+	margin:0px;
+	margin-left:2px;
+	margin-right:2px;
+	
+}
+/*masquage des unions de quartiers*/
+#categories-3 ul>li ul{
+	display:none;
+	list-style-type:none;
+}
+/*affichage de sous menu journaux ou CA*/
+#categories-3 li:hover>ul{
+	display:block;
+	position:relative;
+	background-color: rgba(255, 255, 255); 
+	border:0.5px solid;
+	width:410px;
+	
+}
+/*modification de l'affichage des ul*/
+#categories-3 li>ul>li:hover ul{
+	/*margin-top:20px;*/
+	left:100%;
+	position:absolute;
+	display:inline-block;
+	width:220px;
+	background-color:rgba(255, 255, 255,0);; 
+}
+/*modification de l'affichage des li*/
+#categories-3 li>ul>li:hover li{
+	color:gray;
+	background-color: white; 
+	font-weight:bold;
+	border: 0.2px solid ;
+	width:100%;
+}
+
+
+/*modification de l'affichage des lien*/
+#categories-3 li>ul>li:hover li>a{
+	padding:1px;
+	margin:1px;
+	color:#1982d1;
+}
+/*
+mise en valeur de l'element pointé par la souris
+*/
+#categories-3 li>ul>li:hover{
+	background-color:#1982d1;
+	color:white;
+}
+
+#categories-3 li>ul>li:hover>a{
+	color:white;
+}
+/***********************************************/
+
+
+
+
+@media (max-width: 600px){
+	#categories-3 li:hover>ul{
+		width:370px;
+	}
+	#categories-3 li>ul>li:hover ul{
+		margin-top:20px;
+		left:50%;
+		width:50%;
+	}
+	
+}

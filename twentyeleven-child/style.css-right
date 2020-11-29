@@ -1,0 +1,50 @@
+/*
+* Theme Name:   Twenty Eleven Child
+* Template:     twentyeleven
+* Text Domain:  twentyeleven-child
+*/
+
+/* Showcase */
+.page-template-page-newsletter-php #primary,
+.left-sidebar.page-template-page-newsletter-php #primary {
+	margin: 0;
+}
+
+.page-template-page-newsletter-php .entry-content {
+	float: right;
+	margin: 0 0 0 31%;
+	width: 69%;
+	word-wrap: break-word;
+	 
+	/*
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	overflow: hidden;
+    text-overflow: ellipsis;
+	
+	*/
+}
+.page-template-page-newsletter-php #main .widget-area {
+	float: left;
+	margin: 0 -22.15% 0 0;
+	width: 22.15%;
+}
+
+/* Simplify the showcase template */
+.one-column .page-template-page-newsletter-php .entry-content {
+	float: none;
+	margin: 0;
+	width: 100%;
+}
+.one-column .page-template-page-newsletter-php #main .widget-area {
+	float: none;
+	margin: 0;
+	width: auto;
+}
+/*
+.one-column .page-template-page-newsletter-php .other-recent-posts {
+	border-bottom: 1px solid #ddd;
+}
+*/

@@ -1,0 +1,60 @@
+ /* Style the buttons that are used to open and close the accordion panel */
+ 
+
+.uq_drop_list{
+	position:relative;
+	cursor: pointer;
+	box-sizing: border-box;
+	text-align:center;
+	left:75%;
+	clear: both; 
+	margin-bottom:10px;
+}
+.uq_menu_accordion {
+	display:none;
+	position:relative;
+	left:-45px;
+	background-color: white;
+	color: #fff;
+	cursor: pointer;
+	width:250px;
+	box-sizing: border-box;
+	border: 1px solid black;
+	outline: none;
+	transition: 0.4s;
+	text-align:center;
+    
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.uq_menu_active, .uq_menu_accordion:hover {
+  background-color: #33d8da;
+}
+.uq_menu_active .uq_menu_panel{
+  background-color: #e6fafa!important;
+}
+.uq_menu_tab .uq_menu_panel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  
+}
+.uq_menu_tab .uq_menu_panel li{
+	padding-left:5px;
+	padding-right:5px;
+	margin-right:1px;
+	border:1px solid black;
+}
+/* Style the accordion panel. Note: hidden by default */
+.uq_menu_panel {
+  display: none;
+ 
+} 
+ ul{
+	list-style: none!important;
+	margin:0px!important;
+	padding:0px!important;
+}
+
+

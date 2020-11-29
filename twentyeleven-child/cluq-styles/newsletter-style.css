@@ -1,0 +1,45 @@
+/* newsletter */
+
+/*titre*/
+.page-template-page-newsletter-php #main .newsletter-sidebar-title {
+	font-weight: bold;
+}
+
+/*conteneur*/
+.page-template-page-newsletter-php #primary,
+.left-sidebar.page-template-page-newsletter-php #primary {
+	margin: 0;
+}
+
+/*l'archive des news*/
+.page-template-page-newsletter-php .entry-content1 {
+	float: left;
+	margin: auto;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+/*menu sur le coté*/
+.page-template-page-newsletter-php #main .widget-area {
+	display:none;
+	float: right;
+	margin: 0px;
+	width: 27.15%;
+	padding:5px;
+	/*border: thick double #C0C0C0;*/
+}
+.page-template-page-newsletter-php #main .widget-area .newsletter-sidebar{
+	margin:auto;
+	width:100%;
+}
+/*fields*/
+.page-template-page-newsletter-php #main #mailpoet_form_2 input[type=text],
+.page-template-page-newsletter-php #main #mailpoet_form_2 input[type=email] {
+	resize: horizontal;
+	width: auto;
+	margin:auto;
+}
+
+.page-template-page-newsletter-php .widget-area  .mailpoet_form_widget input[type=submit]{
+	 float:right;
+}

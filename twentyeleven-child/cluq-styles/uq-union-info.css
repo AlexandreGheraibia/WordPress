@@ -1,0 +1,47 @@
+/*menu sur le coté*/
+.page-template-page-Union-Info #main .widget-area {
+	position:absolute;
+	left:85%;
+	display:none;
+	margin: 0px;
+	width: 10%;
+	height:150px;
+	/*border:1px solid green;
+	/*border: thick double #C0C0C0;*/
+}
+
+
+.page-template-page-Union-Info .pagination a:hover:not(.active) {background-color: #ddd;}
+
+/*content*/
+.page-template-page-Union-Info .type-post {
+	
+	
+	
+}
+/*pagination*/
+.page-template-page-Union-Info .pagination {
+  
+  display: flex;
+  justify-content: center;
+  /*border:1px solid orange;*/
+  width:100%;
+}
+
+.page-template-page-Union-Info .pagination a {
+  
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.page-template-page-Union-Info .pagination a.ui-active {
+  background-color: #4CAF50;
+  color: white;
+}
+/*facebook*/
+.facebook{
+	position:relative;
+	/*float: left !important;*/
+}

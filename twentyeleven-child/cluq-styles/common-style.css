@@ -1,0 +1,201 @@
+
+/*******************************************/
+
+
+/*****************************************************/
+/*bouton pour afficher la colonne de droite forum et newsletter*/
+#cluq-menu-button{
+	position:relative;
+	float: right;
+	top:-28px;
+	margin:0px;
+	margin-top:2px;
+	margin-bottom:10px;
+}
+/*animation du contenu des pages de newsletter et du forum*/
+.cluq-content-reduce{
+	
+	width:80% !important;
+	transition:all 0.2s;
+}
+.cluq-content-strech{
+	width:100%!important;
+	transition:all 0.8s;
+}
+
+#clug-icon{
+  width:20px;
+  height:30px;
+}
+/*rediffinition des boutons*/
+button,button[type="button"],button[type="submit"],input[type="submit"] {
+	background:#f5f5f5;
+	color:#555;
+	border-radius:2px;
+	border:1px solid #ccc;
+	
+}
+button:hover,button[type="button"]:hover,button[type="submit"]:hover,input[type="submit"]:hover {
+	background-color: #e6f2ff;
+}
+.button:active,button[type="button"]:active,button[type="submit"]:active,input[type="submit"]:active {
+  background-color: #e6f2ff;
+  box-shadow: 1px #666;
+  transform: translateY(1px);
+}
+
+.my-footer-menu{
+ margin-top: 10px;
+}
+
+.my-footer-menu li{
+ display: inline;
+ padding: 10px 10px 0 10px;
+}
+
+.my-footer-menu li a:hover{
+ color: orange;
+ border-bottom: solid 2px black;
+}
+/* =Responsive Structure
+----------------------------------------------- */
+
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
+ */
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+@media (max-width: 800px) {
+	
+	/* Simplify the newsletter template */
+	.page-template-page-newsletter-php  .featured-posts {
+		min-height: 280px;
+	}
+	/*contenu*/
+	.page-template-page-newsletter-php .entry-content1 {
+		float: none;
+		margin: 0px;
+		width: 100%;
+	}
+	/*colonne de droite*/
+	.page-template-page-newsletter-php #main .widget-area {
+		float: none;
+		margin: 0px;
+		width: auto;
+	}
+	
+	/*center widget item*/
+	.page-template-page-newsletter-php #main .widget-area .newsletter-sidebar{
+		margin: auto;
+		margin-top:5px;
+		width: 90%;
+		text-align:center;
+	}
+	
+	.page-template-page-newsletter-php #main .widget-area .newsletter-sidebar .mailpoet_checkbox_label{
+		text-align:left;
+		margin-left:30%;
+	}
+	.page-template-page-newsletter-php #main .widget-area .newsletter-sidebar input[type="text"],
+	.page-template-page-newsletter-php #main .widget-area .newsletter-sidebar input[type="password"],
+	.page-template-page-newsletter-php #main .widget-area .newsletter-sidebar input[type="email"]{
+		display:inline;
+		width: auto;
+	}
+	
+	/* Simplify the bbpress template */
+	.bbpress-template-page .entry-content1 {
+		float: none;
+		margin: 0px;
+		width: 100%;
+	
+	}
+	
+	/* forum right menu 
+	***********************************************/
+	.bbpress-template-page .widget-area {
+		float: none;
+		margin: 0px;
+		width: 95%;
+	}
+	
+	.bbpress-template-page .widget-area input[type="text"],
+	.bbpress-template-page .widget-area input[type="password"]{
+		width: 120px;
+	}
+	.page-template-page-newsletter-php .widget-area  .mailpoet_form_widget input[type=submit]{
+		float:none;
+	}
+	.cluq-content-reduce{
+		width:100%;
+	}
+}
+
+@media (max-width: 600px) {
+	 /*page login newletter*/
+	.page-template-page-newsletter-php #main .widget-area .newsletter-sidebar .mailpoet_checkbox_label{
+		text-align:left;
+		margin-left:17%;
+	}
+	.page-template-page-newsletter-php #main .widget-area .newsletter-sidebar input[type="text"],
+	.page-template-page-newsletter-php #main .widget-area .newsletter-sidebar input[type="password"],
+	.page-template-page-newsletter-php #main .widget-area .newsletter-sidebar input[type="email"]{
+		width: 100px;
+
+	}
+	/*champs*/
+	.bbpress-template-page .widget-area input[type="text"],
+	.bbpress-template-page .widget-area input[type="password"]{
+		width: 100px;
+	}
+	
+	/*forum colonne login*/
+	/*lien forum*/
+	.bbpress-template-page .widget-area .bbp-login-links{
+		display:flex;
+		flex-direction: column;
+	}
+	/*connexion*/
+	.bbpress-template-page .widget-area .bbp-submit-wrapper{
+		text-align:left;
+		width:100%;
+	}
+	/*champs*/
+	.bbp-login-form .bbp-form .bbp-username p #user_login,
+	.bbp-login-form .bbp-form .bbp-username input[type="text"],
+	.bbp-login-form .bbp-form .bbp-email input[type="text"]{
+		text-align:left;
+		width: 100px;
+	}
+	.bbp-template-notice{
+		float:none;
+		margin:auto;
+		width:auto;
+		word-wrap: break-word;
+	}
+	.post-password-required .post-password-form input[type="password"]{
+		width:90px;
+	}
+	
+	#comments .nopassword{
+		word-wrap: break-word;
+	}
+	
+	#cluq-menu-button{
+	top:-27px;
+	}
+	
+    
+	
+	
+}
+
+
+
