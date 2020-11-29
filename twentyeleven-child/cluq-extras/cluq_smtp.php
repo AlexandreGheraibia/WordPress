@@ -27,9 +27,9 @@ function my_phpmailer_configuration( $mail) {
 	//Password to use for SMTP authentication
 	$mail->Password = "xxxxxxxxx";
 	//Set who the message is to be sent from
-	$mail->setFrom('simurghe@gmail.com', 'admin');
+	$mail->setFrom('xxxxxxxxxxx.com', 'admin');
 	//Set an alternative reply-to address
-	$mail->addReplyTo('simurghe@gmail.com', 'admin');
+	$mail->addReplyTo('xxxxxxxxxxxxx.com', 'admin');
 	//Set who the message is to be sent to
 	/*$mail->addAddress('whoto@example.com', 'John Doe');
 	//Set the subject line
