@@ -1,0 +1,32 @@
+/*edit link
+	add_filter( 'the_content', 'add_content_page' );
+*/
+function add_content_page($content){
+	if(is_admin()){
+		return  $content;
+	}
+	else{
+		$template = get_post_meta(get_the_ID(), '_wp_page_template', true);
+		 
+		if ($template !== 'page-search.php'){
+			return $content;
+		}
+		$args=array(
+		"post_type"=> "page",
+		"post_status"=>"publish"
+		);
+	
+		add_filter('posts_where','authors_where_filter');
+		$the_query = new WP_Query($args);
+		
+		// The Loop
+		if ( $the_query->have_posts() ) {
+			while ( $the_query->have_posts() ) {
+				$the_query->the_post();
+				the_permalink();
+			}
+		}
+	}
+   return $content;
+
+}
